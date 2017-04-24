@@ -8,39 +8,6 @@
 <html>
 <head>
 <%@include file="../common/commonLinks.jsp" %>
-<!-- <style>
-.h1 {
-	color: #ffffff;
-	font-style: italic;
-	font-weight: bold;
-	text-align: center;
-}
-
-.error {
-	color: #ffff00;
-	font-style: italic;
-}
-
-.column {
-	color: aqua;
-	font-weight: bold;
-}
-
-.footer {
-	position: relative;
-	margin-top: 75px; /* negative value of footer height */
-	height: 150px;
-	clear: both;
-}
-
-.button {
-margin: 5px;
-width: 85px;
-height:auto;
-display:inline-block;
-}
-</style>
- -->
 <title>BankAccount Application</title>
 <script>
 function goBack() {

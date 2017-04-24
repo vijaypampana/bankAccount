@@ -20,7 +20,7 @@ public class ResultController {
 		model.addAttribute("resultPage", new ResultPage());
 		model.addAttribute("applNum", "1000");
 		model.addAttribute("applInterest", "8.0");
-		return "resultPage";
+		return "pages/resultPage";
 		
 	}
 	

@@ -28,7 +28,7 @@ public class ApplicantController {
 	public String applicantform(Model model, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
 		model.addAttribute("applicant", new Applicant());
-		return "applicant";
+		return "pages/applicant";
 		
 	}
 	
@@ -38,7 +38,7 @@ public class ApplicantController {
 		//System.out.println(result.getErrorCount());
 		
 		if(result.hasErrors()){
-			return "applicant";
+			return "pages/applicant";
 		}
 		
 		ApplicationContext context;
@@ -50,12 +50,12 @@ public class ApplicantController {
 	    	((AbstractApplicationContext)context).close();
 		    Income i = new Income();
 			model.put("income", i);
-			return "income";
+			return "pages/income";
 			
 	    } else {
 	    	((AbstractApplicationContext)context).close();
 	    	model.put("errval", "Encountered a Exception when inserting data into Applicant table");
-	    	return "applicant";
+	    	return "pages/applicant";
 	    }
 	    
 		

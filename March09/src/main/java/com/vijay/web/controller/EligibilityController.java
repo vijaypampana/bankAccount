@@ -26,7 +26,7 @@ public class EligibilityController {
 	public String eligibilityform(Model model, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
 		model.addAttribute("eligibility", new Eligibility());
-		return "eligibility";
+		return "pages/eligibility";
 		
 	}
 	
@@ -34,7 +34,7 @@ public class EligibilityController {
 	public String eligibilityview(@Valid @ModelAttribute("eligibility") Eligibility e,BindingResult result, Map<String, Object> model) {
 			
 		if(result.hasErrors()){
-			return "eligibility";
+			return "pages/eligibility";
 		}
 		
 		ApplicationContext context;
@@ -48,13 +48,13 @@ public class EligibilityController {
 			model.put("resultPage", r);
 			model.put("applNum", r.getApplicationNumber());
 			model.put("applInterest", e.getInterestrate());
-			return "resultPage";
+			return "pages/resultPage";
 			
 	    } else {
 	    	
 	    	((AbstractApplicationContext)context).close();
 	    	model.put("errval", "Encountered a Exception when inserting data into Eligibility table");
-	    	return "eligibility";
+	    	return "pages/eligibility";
 	    	
 	    }
 	    
