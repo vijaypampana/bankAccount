@@ -30,7 +30,7 @@ public class LoginController {
 		HttpServletResponse response) throws Exception {
 		Login a = new Login();
 		model.put("login", a);
-		return "login";
+		return "pages/login";
 		
 	}
 	
@@ -38,7 +38,7 @@ public class LoginController {
 	public String loginview(@ModelAttribute("login") @Valid Login login,BindingResult result, Map<String, Object> model) {
 		
 		if(result.hasErrors()){
-			return "login";
+			return "pages/login";
 		} 
 		
 		ApplicationContext context;
