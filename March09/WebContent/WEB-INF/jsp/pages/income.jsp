@@ -6,39 +6,7 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-.h1 {
-	color: #ffffff;
-	font-style: italic;
-	font-weight: bold;
-	text-align: center;
-}
-
-.error {
-	color: #ffff00;
-	font-style: italic;
-}
-
-.column {
-	color: aqua;
-	font-weight: bold;
-}
-
-.footer {
-	position: relative;
-	margin-top: 75px; /* negative value of footer height */
-	height: 150px;
-	clear: both;
-}
-
-.button {
-margin: 5px;
-width: 85px;
-height:auto;
-display:inline-block;
-}
-</style>
+<%@include file="../common/commonLinks.jsp" %>
 <title>BankAccount Application</title>
 <script>
 function goBack() {
@@ -48,7 +16,7 @@ function goBack() {
 </head>
 <body bgcolor="#425C91">
 	<img width=150px; height=150px; style="padding-bottom: 50px"
-		src="<%=request.getContextPath()%>/resources/images/digi.jpg" />
+		src="resources/images/digi.jpg" />
 	<h1 class="h1">INCOME INFORMATION</h1>
 	<br>
 	<br>

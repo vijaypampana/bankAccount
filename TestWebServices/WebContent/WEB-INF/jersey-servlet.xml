@@ -17,12 +17,12 @@
 
 
 	<context:annotation-config />
-	<context:component-scan base-package="main.java.com.vijay" />
+	<context:component-scan base-package="main.java.com" />
 
 	<mvc:annotation-driven />
-	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/" />
 
-	<bean id="viewResolver"
+	<!-- <bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/jsp/</value>
@@ -30,7 +30,7 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
-	</bean>
+	</bean> -->
 
 	<bean
 		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />

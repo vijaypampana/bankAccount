@@ -28,7 +28,7 @@ public class IncomeController {
 	public String incomeform(Model model, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
 		model.addAttribute("income", new Income());
-		return "income";
+		return "pages/income";
 		
 	}
 	
@@ -38,7 +38,7 @@ public class IncomeController {
 		//System.out.println(result.getErrorCount());
 		
 		if(result.hasErrors()){
-			return "income";
+			return "pages/income";
 		}
 		
 		ApplicationContext context;
@@ -50,13 +50,13 @@ public class IncomeController {
 	    	((AbstractApplicationContext)context).close();
 		    Eligibility e = new Eligibility();
 			model.put("eligibility", e);
-			return "eligibility";
+			return "pages/eligibility";
 			
 	    } else {
 	    	
 	    	((AbstractApplicationContext)context).close();
 	    	model.put("errval", "Encountered a Exception when inserting data into Income table");
-	    	return "income";
+	    	return "pages/income";
 	    }
 	    
 		

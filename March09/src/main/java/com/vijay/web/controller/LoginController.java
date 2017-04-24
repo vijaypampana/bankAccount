@@ -30,7 +30,7 @@ public class LoginController {
 		HttpServletResponse response) throws Exception {
 		Login a = new Login();
 		model.put("login", a);
-		return "login";
+		return "pages/login";
 		
 	}
 	
@@ -38,7 +38,7 @@ public class LoginController {
 	public String loginview(@ModelAttribute("login") @Valid Login login,BindingResult result, Map<String, Object> model) {
 		
 		if(result.hasErrors()){
-			return "login";
+			return "pages/login";
 		} 
 		
 		ApplicationContext context;
@@ -53,7 +53,7 @@ public class LoginController {
 	    	Applicant b = new Applicant();
 			model.put("applicant", b);
 			((AbstractApplicationContext)context).close();
-			return "applicant";
+			return "pages/applicant";
 	    	
 	    } else {
 	    	
@@ -61,7 +61,7 @@ public class LoginController {
 	    	login.setUsername("");
 	    	login.setPassword("");
 	    	model.put("errval", "User name and Password combination did not match");
-	    	return "login";
+	    	return "pages/login";
 	    }
 	    
     }

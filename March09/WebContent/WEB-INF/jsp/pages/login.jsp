@@ -4,37 +4,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
+
+
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<style>
-.h1 {
-	color: #ffffff;
-	font-style: italic;
-}
-
-.error {
-	color: #ffff00;
-	font-style: italic;
-}
-
-.column {
-	color: aqua;
-	font-weight: bold;
-}
-
-.footer {
-	position: relative;
-	margin-top: 250px; /* negative value of footer height */
-	height: 150px;
-	clear: both;
-}
-</style>
+<%@include file="../common/commonLinks.jsp" %>
 <title>Cognizant Academy Bank</title>
 </head>
 <body bgcolor="425C91">
 	<img width=150px; height=150px; style="padding-bottom: 50px"
-		src="<%=request.getContextPath()%>/resources/images/digi.jpg" />
+		src="resources/images/digi.jpg" />
 	<h1 align="center" class="h1">WELCOME TO COGNIZANT ACADEMY BANK</h1>
 	<br>
 	<br>
