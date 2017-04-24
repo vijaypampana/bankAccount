@@ -51,7 +51,7 @@ function closeWin() {
 </head>
 <body bgcolor="#425C91">
 	<img width=150px; height=150px; style="padding-bottom: 50px"
-		src="<%=request.getContextPath()%>/resources/images/digi.jpg" />
+		src="resources/images/digi.jpg" />
 	<h1 class="h1">APPLICATION STATUS: RESULT</h1>
 	<br>
 	<br>

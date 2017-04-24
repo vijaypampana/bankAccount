@@ -53,7 +53,7 @@ public class LoginController {
 	    	Applicant b = new Applicant();
 			model.put("applicant", b);
 			((AbstractApplicationContext)context).close();
-			return "applicant";
+			return "pages/applicant";
 	    	
 	    } else {
 	    	
@@ -61,7 +61,7 @@ public class LoginController {
 	    	login.setUsername("");
 	    	login.setPassword("");
 	    	model.put("errval", "User name and Password combination did not match");
-	    	return "login";
+	    	return "pages/login";
 	    }
 	    
     }

@@ -4,10 +4,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
+
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
+<%@include file="../common/commonLinks.jsp" %>
+<!-- <style>
 .h1 {
 	color: #ffffff;
 	font-style: italic;
@@ -39,6 +40,7 @@ height:auto;
 display:inline-block;
 }
 </style>
+ -->
 <title>BankAccount Application</title>
 <script>
 function goBack() {
@@ -48,7 +50,7 @@ function goBack() {
 </head>
 <body bgcolor="#425C91">
 	<img width=150px; height=150px; style="padding-bottom: 50px"
-		src="<%=request.getContextPath()%>/resources/images/digi.jpg" />
+		src="resources/images/digi.jpg" />
 	<h1 class="h1">APPLICANT INFORMATION</h1>
 	<br>
 	<br>
