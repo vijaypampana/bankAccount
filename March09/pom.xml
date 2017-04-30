@@ -244,6 +244,15 @@
 	</dependencies>
 
 	<build>
+		
+		<finalName>bankAccount</finalName>
+		
+		<resources>
+			<resource>
+				<directory>WebContent/resources</directory>
+				<targetPath>META-INF/resources</targetPath>
+			</resource>
+		</resources>
 
 		<plugins>
 			<plugin>
